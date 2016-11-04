@@ -4,11 +4,11 @@ describe "Game" do
 
   describe '#current_player'do
 
-    it 'returns @color == "red" if count is odd' do
+    it 'returns red if count is odd' do
       expect(Game.new.current_player(1).color).to eq('red')
     end
 
-    it 'returns @color == "blue" if count is even' do
+    it 'returns blue if count is even' do
       expect(Game.new.current_player(2).color).to eq('blue')
     end
 
